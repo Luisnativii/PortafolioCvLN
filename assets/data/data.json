@@ -66,25 +66,6 @@
     ],
     "projects": [
         {
-            "icon": "heart",
-            "title": "Health Care",
-            "subtitle": "Aplicación Móvil en Kotlin",
-            "description": "Aplicación móvil para el manejo de datos de salud, desarrollada en Kotlin utilizando Android Studio. Incluye integración de base de datos, API y diseño de interfaz de usuario.",
-            "technologies": [
-                {
-                    "icon": "kotlin",
-                    "name": "Kotlin"
-                },
-                {
-                    "icon": "android",
-                    "name": "Android Studio"
-                }  
-            ],
-            "image": "/Helthcare.jpeg",
-            "url": "https://github.com/Luisnativii/HealthCarePDM",
-            "github": "https://github.com/Luisnativii/HealthCarePDM"
-        },
-        {
             "icon": "server",
             "title": "API Hechame La Mano",
             "subtitle": "Desarrollo de APIs",
@@ -129,6 +110,25 @@
             "image": "/Fylo.png",
             "url": "https://landigpagee.netlify.app/",
             "github": "https://github.com/Luisnativii/BootCamKodigoFullStackJr/tree/main/LandigPage"
+        },
+        {
+            "icon": "heart",
+            "title": "Health Care",
+            "subtitle": "Aplicación Móvil en Kotlin",
+            "description": "Aplicación móvil para el manejo de datos de salud, desarrollada en Kotlin utilizando Android Studio. Incluye integración de base de datos, API y diseño de interfaz de usuario.",
+            "technologies": [
+                {
+                    "icon": "kotlin",
+                    "name": "Kotlin"
+                },
+                {
+                    "icon": "android",
+                    "name": "Android Studio"
+                }  
+            ],
+            "image": "/p1.jpeg",
+            "url": "https://github.com/Luisnativii/HealthCarePDM",
+            "github": "https://github.com/Luisnativii/HealthCarePDM"
         },
         {
             "icon": "server",
