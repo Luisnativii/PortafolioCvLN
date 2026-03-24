@@ -1,10 +1,12 @@
 import reflex as rx
-from portafolio.styles.styles import Size
+
+from portafolio.data import localize
+from portafolio.styles.styles import section_heading_style
 
 
-def heading(text: str, h1=False) -> rx.Component:
+def heading(text, theme: dict, h1: bool = False) -> rx.Component:
     return rx.heading(
-        text,
+        localize(text),
         as_="h1" if h1 else "h2",
-        size=Size.BIG.value if h1 else Size.MEDIUM.value
+        style=section_heading_style(theme, h1),
     )

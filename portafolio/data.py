@@ -1,4 +1,29 @@
 import json
+from pathlib import Path
+
+import reflex as rx
+
+from portafolio.state import PortfolioState
+
+LocalizedValue = str | dict[str, str]
+
+
+def default_text(value: LocalizedValue) -> str:
+    if isinstance(value, dict):
+        return value.get("en") or value.get("es", "")
+    return value
+
+
+def localize(value: LocalizedValue):
+    if isinstance(value, dict):
+        english = value.get("en") or value.get("es", "")
+        spanish = value.get("es", english)
+        return rx.cond(PortfolioState.language == "es", spanish, english)
+    return value
+
+
+def translate(en: str, es: str):
+    return rx.cond(PortfolioState.language == "es", es, en)
 
 
 class Media:
@@ -16,14 +41,14 @@ class Technology:
 
 
 class Info:
-    def __init__(self, icon, title, subtitle, description, date="", certificate="", technologies=[], image="", url="", github=""):
+    def __init__(self, icon, title, subtitle, description, date="", certificate="", technologies=None, image="", url="", github=""):
         self.icon = icon
         self.title = title
         self.subtitle = subtitle
         self.description = description
         self.date = date
         self.certificate = certificate
-        self.technologies = [Technology(**tech) for tech in technologies]
+        self.technologies = [Technology(**tech) for tech in (technologies or [])]
         self.image = image
         self.url = url
         self.github = github
@@ -40,20 +65,20 @@ class Extra:
 class Data:
     def __init__(
         self,
-            title,
-            description,
-            image,
-            avatar,
-            name,
-            skill,
-            location,
-            media,
-            about,
-            technologies,
-            experience,
-            projects,
-            training,
-            extras
+        title,
+        description,
+        image,
+        avatar,
+        name,
+        skill,
+        location,
+        media,
+        about,
+        technologies,
+        experience,
+        projects,
+        training,
+        extras,
     ):
         self.title = title
         self.description = description
@@ -71,7 +96,9 @@ class Data:
         self.extras = [Extra(**info) for info in extras]
 
 
-with open("assets/data/data.json") as file:
+DATA_FILE = Path(__file__).resolve().parent.parent / "assets" / "data" / "data.json"
+
+with DATA_FILE.open(encoding="utf-8") as file:
     json_data = json.load(file)
 
 data = Data(**json_data)

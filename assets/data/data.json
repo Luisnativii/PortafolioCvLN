@@ -1,218 +1,320 @@
 {
-    "title": "Luis Alejandro Nativi Claude - Ingeniero en Formación",
-    "description": "Estudiante de Ingeniería Informática apasionado por la tecnología y la optimización de procesos. Con habilidades en Python, JavaScript, C++, Java, Kotlin y experiencia en proyectos de desarrollo de aplicaciones móviles y web.",
-    "image": "/pp.jpg",
-    "avatar": "/pp.jpg",
-    "name": "Luis Alejandro Nativi Claude",
-    "skill": "Python, JavaScript, C++, Java, Kotlin",   
-    "location": "El Salvador",
-    "media": {
-        "email": "luis.nativi2018@gmail.com",
-        "cv": "/data/cv.pdf",
-        "github": "https://github.com/Luisnativii",
-        "likedin": "https://linkedin.com"
+  "title": {
+    "en": "Luis Alejandro Nativi Claude | Software Portfolio",
+    "es": "Luis Alejandro Nativi Claude | Portafolio de Software"
+  },
+  "description": {
+    "en": "Computer Engineering student focused on building practical web, mobile, and API solutions with clean execution and a strong learning mindset.",
+    "es": "Estudiante de Ingenieria Informatica enfocado en crear soluciones practicas web, moviles y de APIs con buena ejecucion y una mentalidad fuerte de aprendizaje."
+  },
+  "image": "/pp.jpg",
+  "avatar": "/pp.jpg",
+  "name": "Luis Alejandro Nativi Claude",
+  "skill": {
+    "en": "Computer Engineering Student • Full-Stack Developer",
+    "es": "Estudiante de Ingenieria Informatica • Desarrollador Full-Stack"
+  },
+  "location": "El Salvador",
+  "media": {
+    "email": "luis.nativi2018@gmail.com",
+    "cv": "/data/cv.pdf",
+    "github": "https://github.com/Luisnativii",
+    "likedin": "https://linkedin.com"
+  },
+  "about": {
+    "en": "I am a Computer Engineering student at UCA, currently in my sixth term. I enjoy technology that makes work simpler, faster, and more reliable. I adapt quickly, learn fast, and feel comfortable collaborating with different teams while continuously improving both my technical skills and the way I organize my time.",
+    "es": "Soy estudiante de Ingenieria Informatica en la UCA, actualmente en mi sexto ciclo. Disfruto la tecnologia que vuelve el trabajo mas simple, rapido y confiable. Me adapto con facilidad, aprendo rapido y me siento comodo colaborando con distintos equipos mientras sigo mejorando mis habilidades tecnicas y mi forma de organizar el tiempo."
+  },
+  "technologies": [
+    {
+      "icon": "devicon-python-plain",
+      "name": "Python"
     },
-    "about": "Soy un estudiante de Ingeniería Informática en la UCA, actualmente en mi sexto ciclo. Me apasiona la tecnología y la optimización de procesos, tanto en código como en la gestión del tiempo. Aprendo rápidamente y me adapto fácilmente a diferentes grupos y entornos de trabajo.",
-    "technologies": [
+    {
+      "icon": "devicon-javascript-plain",
+      "name": "JavaScript"
+    },
+    {
+      "icon": "devicon-cplusplus-plain",
+      "name": "C++"
+    },
+    {
+      "icon": "devicon-java-plain",
+      "name": "Java"
+    },
+    {
+      "icon": "devicon-kotlin-plain",
+      "name": "Kotlin"
+    },
+    {
+      "icon": "devicon-react-original",
+      "name": "React"
+    },
+    {
+      "icon": "devicon-vite-plain",
+      "name": "Vite"
+    },
+    {
+      "icon": "devicon-tailwindcss-plain",
+      "name": "Tailwind CSS"
+    },
+    {
+      "icon": "devicon-git-plain",
+      "name": "Git"
+    },
+    {
+      "icon": "devicon-linux-plain",
+      "name": "Linux"
+    }
+  ],
+  "experience": [
+    {
+      "icon": "briefcase",
+      "title": {
+        "en": "Disrupp",
+        "es": "Disrupp"
+      },
+      "subtitle": {
+        "en": "Digital Marketing Agency",
+        "es": "Agencia de Marketing Digital"
+      },
+      "description": {
+        "en": "Built an informative and e-commerce website using WordPress and WooCommerce, with a focus on usability, clear structure, and product presentation.",
+        "es": "Desarrolle un sitio web informativo y de comercio electronico con WordPress y WooCommerce, enfocado en usabilidad, estructura clara y presentacion de productos."
+      },
+      "date": "2024"
+    }
+  ],
+  "projects": [
+    {
+      "icon": "server",
+      "title": {
+        "en": "Echame La Mano API",
+        "es": "API Echame La Mano"
+      },
+      "subtitle": {
+        "en": "API Development",
+        "es": "Desarrollo de APIs"
+      },
+      "description": {
+        "en": "Designed and developed multiple APIs focused on performance, security, and scalability, including token-based authentication and deployment workflows for Railway and Vercel.",
+        "es": "Disene y desarrolle multiples APIs enfocadas en rendimiento, seguridad y escalabilidad, incluyendo autenticacion con tokens y despliegues en Railway y Vercel."
+      },
+      "technologies": [
         {
-            "icon": "devicon-python-plain",
-            "name": "Python"
+          "icon": "devicon-javascript-plain",
+          "name": "JavaScript"
         },
         {
-            "icon": "devicon-javascript-plain",
-            "name": "JavaScript"
+          "icon": "devicon-nodejs-plain",
+          "name": "Node.js"
         },
         {
-            "icon": "devicon-cplusplus-plain",
-            "name": "C++"
-        },
-        {
-            "icon": "devicon-java-plain",
-            "name": "Java"
-        },
-        {
-            "icon": "devicon-kotlin-plain",
-            "name": "Kotlin"
-        },
-        {
-            "icon": "devicon-react-original",
-            "name": "React"
-        },
-        {
-            "icon": "devicon-vite-plain",
-            "name": "Vite"
-        },
-        {
-            "icon": "devicon-tailwindcss-plain",
-            "name": "Tailwind CSS"
-        },
-        {
-            "icon": "devicon-git-plain",
-            "name": "Git"
-        },
-        {
-            "icon": "devicon-linux-plain",
-            "name": "Linux"
+          "icon": "devicon-react-original",
+          "name": "React"
         }
-    ],
-    "experience": [
+      ],
+      "image": "/Apiweb.png",
+      "url": "https://github.com/Luisnativii/EchameLaManoServer.git",
+      "github": "https://github.com/Luisnativii/EchameLaManoServer.git"
+    },
+    {
+      "icon": "monitor",
+      "title": {
+        "en": "Fylo",
+        "es": "Fylo"
+      },
+      "subtitle": {
+        "en": "Informational Landing Page",
+        "es": "Landing Page Informativa"
+      },
+      "description": {
+        "en": "Created a responsive landing page with React, HTML, and Tailwind CSS, deployed to Netlify with a clean and product-focused layout.",
+        "es": "Cree una landing page responsive con React, HTML y Tailwind CSS, desplegada en Netlify con una interfaz limpia y enfocada en el producto."
+      },
+      "technologies": [
         {
-            "icon": "book",
-            "title": "Disrupp",
-            "subtitle": "Agencia de Marketing Digital",
-            "description": "Se le desarrolló una página web utilizando Wordpress y WooCommerce, informativa y de venta de productos.",
-            "date": "2024"
+          "icon": "devicon-javascript-plain",
+          "name": "JavaScript"
+        },
+        {
+          "icon": "devicon-react-original",
+          "name": "React"
+        },
+        {
+          "icon": "devicon-tailwindcss-plain",
+          "name": "Tailwind CSS"
         }
-    ],
-    "projects": [
+      ],
+      "image": "/Fylo.png",
+      "url": "https://landigpagee.netlify.app/",
+      "github": "https://github.com/Luisnativii/BootCamKodigoFullStackJr/tree/main/LandigPage"
+    },
+    {
+      "icon": "heart",
+      "title": {
+        "en": "Health Care",
+        "es": "Health Care"
+      },
+      "subtitle": {
+        "en": "Mobile App in Kotlin",
+        "es": "Aplicacion Movil en Kotlin"
+      },
+      "description": {
+        "en": "Built a mobile app for health data management in Kotlin with Android Studio, combining local data handling, API integration, and UI design.",
+        "es": "Desarrolle una app movil para gestion de datos de salud en Kotlin con Android Studio, combinando manejo de datos, integracion con APIs y diseno de interfaz."
+      },
+      "technologies": [
         {
-            "icon": "server",
-            "title": "API Hechame La Mano",
-            "subtitle": "Desarrollo de APIs",
-            "description": "Creación y desarrollo de múltiples APIs para diferentes propósitos, enfocadas en la eficiencia y la optimización del rendimiento, importante la seguridad de los usuarios, encriptación con token de contraseña e inicio de sesión, deployada en Railway y Vercel.",
-            "technologies": [
-                {
-                    "icon": "javascript",
-                    "name": "JavaScript"
-                },
-                {
-                    "icon": "nodejs",
-                    "name": "Node.js"
-                },
-                {
-                    "icon": "react",
-                    "name": "React"
-                }
-            ],
-            "image": "/Apiweb.png",
-            "url": "https://github.com/Luisnativii/EchameLaManoServer.git",
-            "github": "https://github.com/Luisnativii/EchameLaManoServer.git"
+          "icon": "devicon-kotlin-plain",
+          "name": "Kotlin"
         },
         {
-            "icon": "server",
-            "title": "Fylo",
-            "subtitle": "Landing Page Informativa",
-            "description": "Página web informativa creada con React, HTML y Tailwind CSS. Deployada en Netlify.",
-            "technologies": [
-                {
-                    "icon": "javascript",
-                    "name": "JavaScript"
-                },
-                {
-                    "icon": "nodejs",
-                    "name": "Node.js"
-                },
-                {
-                    "icon": "react",
-                    "name": "React"
-                }
-            ],
-            "image": "/Fylo.png",
-            "url": "https://landigpagee.netlify.app/",
-            "github": "https://github.com/Luisnativii/BootCamKodigoFullStackJr/tree/main/LandigPage"
-        },
-        {
-            "icon": "heart",
-            "title": "Health Care",
-            "subtitle": "Aplicación Móvil en Kotlin",
-            "description": "Aplicación móvil para el manejo de datos de salud, desarrollada en Kotlin utilizando Android Studio. Incluye integración de base de datos, API y diseño de interfaz de usuario.",
-            "technologies": [
-                {
-                    "icon": "kotlin",
-                    "name": "Kotlin"
-                },
-                {
-                    "icon": "android",
-                    "name": "Android Studio"
-                }  
-            ],
-            "image": "/p1.jpeg",
-            "url": "https://github.com/Luisnativii/HealthCarePDM",
-            "github": "https://github.com/Luisnativii/HealthCarePDM"
-        },
-        {
-            "icon": "server",
-            "title": "Proyecto Página de Comida Rápida",
-            "subtitle": "Página Web Informativa",
-            "description": "Desarrollo de una página web informativa para un restaurante de comida rápida.",
-            "technologies": [
-                {
-                    "icon": "javascript",
-                    "name": "JavaScript"
-                },
-                {
-                    "icon": "nodejs",
-                    "name": "Node.js"
-                },
-                {
-                    "icon": "react",
-                    "name": "React"
-                }
-            ],
-            "image": "/burger.png",
-            "url": "https://animated-malasada-ec2fc2.netlify.app/",
-            "github": "https://github.com/Luisnativii/BootCamKodigoFullStackJr/tree/main/clase03"
-        },
-        {
-            "icon": "server",
-            "title": "Proyecto Blog de Café",
-            "subtitle": "Blog Informativo",
-            "description": "Blog informativo sobre cursos de café, con navegación entre páginas, diseñado para ser llamativo y fácil de usar. Deployado en Netlify.",
-            "technologies": [
-                {
-                    "icon": "javascript",
-                    "name": "JavaScript"
-                },
-                {
-                    "icon": "nodejs",
-                    "name": "Node.js"
-                },
-                {
-                    "icon": "react",
-                    "name": "React"
-                }
-            ],
-            "image": "/Cafe.png",
-            "url": "https://actividad1kodigoteam.netlify.app/cursos",
-            "github": "https://github.com/Luisnativii/BootCamKodigoFullStackJr/tree/main/clase05"
+          "icon": "devicon-androidstudio-plain",
+          "name": "Android Studio"
         }
-    ],
-    "training": [
+      ],
+      "image": "/p1.jpeg",
+      "url": "https://github.com/Luisnativii/HealthCarePDM",
+      "github": "https://github.com/Luisnativii/HealthCarePDM"
+    },
+    {
+      "icon": "server",
+      "title": {
+        "en": "Fast Food Website",
+        "es": "Sitio Web de Comida Rapida"
+      },
+      "subtitle": {
+        "en": "Informational Website",
+        "es": "Sitio Web Informativo"
+      },
+      "description": {
+        "en": "Developed an informative restaurant website with a visual structure designed to communicate menu content and brand identity clearly.",
+        "es": "Desarrolle un sitio web informativo para un restaurante con una estructura visual pensada para comunicar el menu y la identidad de marca con claridad."
+      },
+      "technologies": [
         {
-            "icon": "award",
-            "title": "Certificación en Python",
-            "subtitle": "Udemy",
-            "description": "Curso completo de Python, cubriendo desde conceptos básicos hasta avanzados, incluyendo desarrollo de aplicaciones y programación de métodos numéricos.",
-            "date": "2023",
-            "certificate": "https://www.udemy.com/certificate/UC-58b9537f-a109-4cfe-b04e-94f9b88b63bf/"
+          "icon": "devicon-javascript-plain",
+          "name": "JavaScript"
         },
         {
-            "icon": "award",
-            "title": "Certificación en Diseño UI",
-            "subtitle": "Udemy",
-            "description": "Curso de Diseño de Interfaces de Usuario, enfocándose en la creación de experiencias de usuario atractivas y eficientes.",
-            "date": "2023",
-            "certificate": "/data/UI.pdf"
+          "icon": "devicon-react-original",
+          "name": "React"
+        },
+        {
+          "icon": "devicon-css3-plain",
+          "name": "CSS"
         }
-    ],
-    "extras": [
+      ],
+      "image": "/burger.png",
+      "url": "https://animated-malasada-ec2fc2.netlify.app/",
+      "github": "https://github.com/Luisnativii/BootCamKodigoFullStackJr/tree/main/clase03"
+    },
+    {
+      "icon": "coffee",
+      "title": {
+        "en": "Coffee Blog",
+        "es": "Blog de Cafe"
+      },
+      "subtitle": {
+        "en": "Content-Driven Website",
+        "es": "Sitio Web de Contenido"
+      },
+      "description": {
+        "en": "Built an informational blog about coffee courses with multi-page navigation, visual hierarchy, and a user-friendly reading experience.",
+        "es": "Construi un blog informativo sobre cursos de cafe con navegacion entre paginas, jerarquia visual y una experiencia de lectura amigable."
+      },
+      "technologies": [
         {
-            "image": "/IOOO.jpeg",
-            "title": "Un poco mas de mi",
-            "description": "Soy una persona que le encanta aprender cosas nuevas, me gusta la tegnologia y optimizar los prosesos siempre aplicando las buenas practicas.",
-            "url": ""
+          "icon": "devicon-javascript-plain",
+          "name": "JavaScript"
         },
         {
-            "image": "/add.jpeg",
-            "title": "Recursos",
-            "description": "Cuento con los recursos necesarios para aprender por mi cuenta, investigar y aplicar nuevas tecnologías y metodologías de trabajo.",
-            "url": ""
+          "icon": "devicon-react-original",
+          "name": "React"
         },
         {
-            "image": "/GitHUb.png",
-            "title": "GitHub",
-            "description": "Actualmente soy muy activo en la plataforma de GitHub haciendo proyectos personales y colaborando en proyectos de código abierto.",
-            "url": ""
+          "icon": "devicon-css3-plain",
+          "name": "CSS"
         }
-    ]
+      ],
+      "image": "/Cafe.png",
+      "url": "https://actividad1kodigoteam.netlify.app/cursos",
+      "github": "https://github.com/Luisnativii/BootCamKodigoFullStackJr/tree/main/clase05"
+    }
+  ],
+  "training": [
+    {
+      "icon": "award",
+      "title": {
+        "en": "Python Certification",
+        "es": "Certificacion en Python"
+      },
+      "subtitle": {
+        "en": "Udemy",
+        "es": "Udemy"
+      },
+      "description": {
+        "en": "Completed a comprehensive Python course covering programming fundamentals, practical development, and problem-solving patterns.",
+        "es": "Complete un curso integral de Python cubriendo fundamentos de programacion, desarrollo practico y patrones de resolucion de problemas."
+      },
+      "date": "2023",
+      "certificate": "https://www.udemy.com/certificate/UC-58b9537f-a109-4cfe-b04e-94f9b88b63bf/"
+    },
+    {
+      "icon": "pen-tool",
+      "title": {
+        "en": "UI Design Certification",
+        "es": "Certificacion en Diseno UI"
+      },
+      "subtitle": {
+        "en": "Udemy",
+        "es": "Udemy"
+      },
+      "description": {
+        "en": "Studied the foundations of interface design with a focus on cleaner layouts, usability, and more intentional visual decisions.",
+        "es": "Estudie fundamentos de diseno de interfaces con enfoque en layouts mas limpios, usabilidad y decisiones visuales mas intencionales."
+      },
+      "date": "2023",
+      "certificate": "/data/UI.pdf"
+    }
+  ],
+  "extras": [
+    {
+      "image": "/IOOO.jpeg",
+      "title": {
+        "en": "How I Work",
+        "es": "Como Trabajo"
+      },
+      "description": {
+        "en": "I enjoy learning continuously, understanding how systems work, and improving processes through cleaner structure and better execution.",
+        "es": "Disfruto aprender de forma continua, entender como funcionan los sistemas y mejorar procesos con una estructura mas limpia y una mejor ejecucion."
+      },
+      "url": ""
+    },
+    {
+      "image": "/add.jpeg",
+      "title": {
+        "en": "Self-Learning Mindset",
+        "es": "Mentalidad de Autoaprendizaje"
+      },
+      "description": {
+        "en": "I am comfortable researching, testing, and adopting new tools on my own whenever a project demands better solutions.",
+        "es": "Me siento comodo investigando, probando y adoptando nuevas herramientas por mi cuenta cuando un proyecto exige mejores soluciones."
+      },
+      "url": ""
+    },
+    {
+      "image": "/GitHUb.png",
+      "title": {
+        "en": "Active on GitHub",
+        "es": "Activo en GitHub"
+      },
+      "description": {
+        "en": "I regularly build personal projects and keep exploring code as a way to sharpen my skills and stay curious.",
+        "es": "Construyo proyectos personales con frecuencia y sigo explorando codigo como una forma de afinar mis habilidades y mantener la curiosidad."
+      },
+      "url": ""
+    }
+  ]
 }

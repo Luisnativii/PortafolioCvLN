@@ -1,14 +1,14 @@
 import reflex as rx
 
-from portafolio.styles.styles import EmSize
 
-
-def icon_badge(icon: str) -> rx.Component:
+def icon_badge(icon: str, theme: dict) -> rx.Component:
     return rx.badge(
-        rx.icon(
-            icon,
-            size=32
-        ),
-        aspect_ratio="1",
-        variant="soft"
+        rx.icon(icon, size=30),
+        style={
+            "background": theme["accent_soft"],
+            "color": theme["accent"],
+            "border": f"1px solid {theme['border']}",
+            "padding": "0.8rem",
+            "border_radius": "20px",
+        },
     )
