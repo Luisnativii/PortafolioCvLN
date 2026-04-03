@@ -118,6 +118,8 @@ def info_detail(info: Info, theme: dict) -> rx.Component:
             ),
             spacing=Size.SMALL.value,
             width="100%",
+            height="100%",
         ),
+        height="100%",
         style=secondary_panel_style(theme),
     )

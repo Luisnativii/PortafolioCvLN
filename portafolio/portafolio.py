@@ -97,6 +97,11 @@ app = rx.App(
         accent_color="teal",
         radius="large",
     ),
+    head_components=[
+        rx.html('<link rel="manifest" href="/manifest.json" />'),
+        rx.html('<link rel="apple-touch-icon" href="/avatar.jpg" />'),
+        rx.script("if ('serviceWorker' in navigator) { window.addEventListener('load', () => {navigator.serviceWorker.register('/sw.js');}); }")
+    ]
 )
 
 title = default_text(DATA.title)
@@ -112,5 +117,9 @@ app.add_page(
         {"name": "og:title", "content": title},
         {"name": "og:description", "content": description},
         {"name": "og:image", "content": image},
+        {"name": "theme-color", "content": "#060816"},
+        {"name": "apple-mobile-web-app-capable", "content": "yes"},
+        {"name": "apple-mobile-web-app-status-bar-style", "content": "black"},
+        {"name": "apple-mobile-web-app-title", "content": "Luis CV"},
     ],
 )

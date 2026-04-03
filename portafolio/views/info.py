@@ -10,12 +10,28 @@ def info(title, info_items: list[Info], theme: dict) -> rx.Component:
     return rx.box(
         rx.vstack(
             heading(title, theme),
-            rx.vstack(
-                *[
-                    info_detail(item, theme)
-                    for item in info_items
-                ],
-                spacing=Size.DEFAULT.value,
+            rx.mobile_only(
+                rx.vstack(
+                    *[
+                        info_detail(item, theme)
+                        for item in info_items
+                    ],
+                    spacing=Size.DEFAULT.value,
+                    width="100%",
+                ),
+                width="100%",
+            ),
+            rx.tablet_and_desktop(
+                rx.grid(
+                    *[
+                        info_detail(item, theme)
+                        for item in info_items
+                    ],
+                    columns="2",
+                    spacing=Size.DEFAULT.value,
+                    width="100%",
+                    align_items="stretch",
+                ),
                 width="100%",
             ),
             spacing=Size.DEFAULT.value,

@@ -92,6 +92,11 @@ def secondary_panel_style(theme: dict) -> dict:
         **panel_style(theme),
         "background": theme["surface_soft"],
         "box_shadow": "none",
+        "transition": "transform 0.25s ease, box-shadow 0.25s ease",
+        "_hover": {
+            "transform": "translateY(-6px)",
+            "box_shadow": theme["shadow"],
+        }
     }
 
 
@@ -102,6 +107,10 @@ def badge_style(theme: dict) -> dict:
         "background": theme["badge_background"],
         "border": f"1px solid {theme['border']}",
         "color": theme["text_primary"],
+        "display": "inline-flex",
+        "align_items": "center",
+        "gap": "0.5rem",
+        "font_weight": "500",
     }
 
 
