@@ -2,7 +2,6 @@ import reflex as rx
 
 from portafolio import data
 from portafolio.data import default_text, translate
-from portafolio.state import PortfolioState
 from portafolio.styles.styles import (
     BASE_STYLE,
     COLOR_THEME,
@@ -22,42 +21,6 @@ from portafolio.views.tech_stack import tech_stack
 
 DATA = data.data
 
-
-def control_bar(theme: dict) -> rx.Component:
-    return rx.box(
-        rx.hstack(
-            rx.text(
-                translate("Portfolio Controls", "Controles del Portafolio"),
-                color=theme["text_secondary"],
-                font_weight="600",
-            ),
-            rx.spacer(),
-            rx.hstack(
-                rx.button(
-                    rx.icon("languages", size=18),
-                    translate("Switch to Spanish", "Cambiar a Ingles"),
-                    on_click=PortfolioState.toggle_language,
-                    style=secondary_button_style(theme),
-                ),
-                rx.button(
-                    rx.icon("palette", size=18),
-                    rx.cond(
-                        PortfolioState.monochrome,
-                        translate("Back to Color", "Volver a Color"),
-                        translate("Black & White", "Blanco y Negro"),
-                    ),
-                    on_click=PortfolioState.toggle_monochrome,
-                    style=secondary_button_style(theme),
-                ),
-                spacing="3",
-                flex_wrap="wrap",
-                justify="end",
-            ),
-            width="100%",
-            align="center",
-        ),
-        style=panel_style(theme),
-    )
 
 
 def portfolio_page(theme: dict) -> rx.Component:
@@ -84,7 +47,6 @@ def portfolio_page(theme: dict) -> rx.Component:
         ),
         rx.center(
             rx.vstack(
-                control_bar(theme),
                 header(DATA, theme),
                 rx.mobile_only(
                     rx.vstack(
@@ -123,14 +85,11 @@ def portfolio_page(theme: dict) -> rx.Component:
 
 
 def index() -> rx.Component:
-    return rx.cond(
-        PortfolioState.monochrome,
-        portfolio_page(MONO_THEME),
-        portfolio_page(COLOR_THEME),
-    )
+    return portfolio_page(COLOR_THEME)
 
 
 app = rx.App(
+    overlay_component=rx.fragment(),
     stylesheets=STYLESHEETS,
     style=BASE_STYLE,
     theme=rx.theme(

@@ -3,7 +3,7 @@ from pathlib import Path
 
 import reflex as rx
 
-from portafolio.state import PortfolioState
+
 
 LocalizedValue = str | dict[str, str]
 
@@ -17,13 +17,12 @@ def default_text(value: LocalizedValue) -> str:
 def localize(value: LocalizedValue):
     if isinstance(value, dict):
         english = value.get("en") or value.get("es", "")
-        spanish = value.get("es", english)
-        return rx.cond(PortfolioState.language == "es", spanish, english)
+        return value.get("es", english)
     return value
 
 
 def translate(en: str, es: str):
-    return rx.cond(PortfolioState.language == "es", es, en)
+    return es
 
 
 class Media:
